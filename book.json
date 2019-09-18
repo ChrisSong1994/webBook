@@ -5,41 +5,51 @@
   "language": "zh-hans",
   "gitbook": "3.2.3",
   "styles": {
-      "website": "./styles/website.css"
+    "website": "./styles/website.css"
   },
   "structure": {
-      "readme": "README.md"
+    "readme": "README.md"
   },
   "plugins": [
-     
+    "back-to-top-button",
+    "chapter-fold",
+    "code",
+    "splitter",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "popup",
+    "-sharing",
+    "sharing-plus"
   ],
   "pluginsConfig": {
-      "github": {
-          "url": "https://github.com/song111/webBook"
-      },
-     
-      "sharing": {
-          "douban": false,
-          "facebook": false,
-          "google": false,
-          "hatenaBookmark": false,
-          "instapaper": false,
-          "line": false,
-          "linkedin": false,
-          "messenger": false,
-          "pocket": false,
-          "qq": false,
-          "qzone": false,
-          "stumbleupon": false,
-          "twitter": false,
-          "viber": false,
-          "vk": false,
-          "weibo": false,
-          "whatsapp": false,
-          "all": [
-              "google", "facebook", "weibo", "twitter",
-              "qq", "qzone", "linkedin", "pocket"
-          ]
-      }
+    "github": {
+      "url": "https://github.com/song111/webBook"
+    },
+
+    "sharing": {
+      "douban": true,
+      "facebook": true,
+      "google": true,
+      "pocket": true,
+      "qq": true,
+      "qzone": true,
+      "twitter": true,
+      "weibo": true,
+      "all": [
+        "douban",
+        "facebook",
+        "google",
+        "instapaper",
+        "linkedin",
+        "twitter",
+        "weibo",
+        "messenger",
+        "qq",
+        "qzone",
+        "viber",
+        "whatsapp"
+      ]
+    }
   }
 }
