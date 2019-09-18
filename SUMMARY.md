@@ -14,6 +14,9 @@
       * [基础深入](Base/Javascript/基础深入/README.md)
           * [this指向](Base/Javascript/基础深入/this指向.md) 
 
+      * [专题深入](Base/Javascript/专题/README.md)
+          * [跨域](Base/Javascript/专题/跨域.md)
+
 
 ## 算法
 * [数据结构](Algorithm/DataStructure/README.md)
@@ -22,3 +25,6 @@
 
 ## 工具
   * [Yarn](Tool/Yarn/README.md)
+
+  * [Npm](Tool/Npm/README.md)
+     * [npm常用命令](Tool/Npm/npm常用命令.md) 
