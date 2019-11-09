@@ -227,6 +227,58 @@
             
         </li>
     
+        <li class="chapter " data-level="2.3.1.2" data-path="../Javascript/基础深入/从原型到原型链.html">
+            
+                <a href="../Javascript/基础深入/从原型到原型链.html">
+            
+                    
+                    从原型到原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.3" data-path="../Javascript/基础深入/执行上下文栈.html">
+            
+                <a href="../Javascript/基础深入/执行上下文栈.html">
+            
+                    
+                    执行上下文栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.4" data-path="../Javascript/基础深入/变量对象.html">
+            
+                <a href="../Javascript/基础深入/变量对象.html">
+            
+                    
+                    变量对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.1.5" data-path="../Javascript/基础深入/执行上下文.html">
+            
+                <a href="../Javascript/基础深入/执行上下文.html">
+            
+                    
+                    执行上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -272,11 +324,45 @@
 
     
         
+        <li class="header">Http 协议</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Node</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../Node/nodejs的调试.html">
+            
+                <a href="../../Node/nodejs的调试.html">
+            
+                    
+                    nodejs 的调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">安全</li>
+        
+        
+    
+
+    
+        
         <li class="header">算法</li>
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../../Algorithm/DataStructure/">
+        <li class="chapter " data-level="6.1" data-path="../../Algorithm/DataStructure/">
             
                 <a href="../../Algorithm/DataStructure/">
             
@@ -289,7 +375,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../../Algorithm/Algorithm/">
+        <li class="chapter " data-level="6.2" data-path="../../Algorithm/Algorithm/">
             
                 <a href="../../Algorithm/Algorithm/">
             
@@ -309,7 +395,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../../Tool/Yarn/">
+        <li class="chapter " data-level="7.1" data-path="../../Tool/Yarn/">
             
                 <a href="../../Tool/Yarn/">
             
@@ -322,7 +408,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../../Tool/Npm/">
+        <li class="chapter " data-level="7.2" data-path="../../Tool/Npm/">
             
                 <a href="../../Tool/Npm/">
             
@@ -336,7 +422,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.2.1" data-path="../../Tool/Npm/npm常用命令.html">
+        <li class="chapter " data-level="7.2.1" data-path="../../Tool/Npm/npm常用命令.html">
             
                 <a href="../../Tool/Npm/npm常用命令.html">
             
@@ -399,7 +485,607 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h2 id="&#x4E24;&#x5217;&#x5E03;&#x5C40;">&#x4E24;&#x5217;&#x5E03;&#x5C40;</h2>
+<h3 id="&#x4E00;&#x3001;&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;">&#x4E00;&#x3001;&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;,&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;</h3>
+<h4 id="1-&#x5229;&#x7528;floatmargin">1. &#x5229;&#x7528;float+margin</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">float</span>: left;  <span class="hljs-comment">/*&#x53EA;&#x8BBE;&#x7F6E;&#x6D6E;&#x52A8;,&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">overflow</span>: hidden;  <span class="hljs-comment">/*&#x89E6;&#x53D1;bfc*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;#left&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;&#x5DE6;&#x6D6E;&#x52A8;&#xFF0C;#right&#x89E6;&#x53D1;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;<br>&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#xFF0C;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x65E0;&#x9700;&#x5173;&#x6CE8;&#x5BBD;&#x5EA6;&#xFF0C;&#x5229;&#x7528;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;<br>&#x7F3A;&#x70B9;&#xFF1A;#right&#x8BBE;&#x7F6E;margin-left&#x9700;&#x8981;&#x5927;&#x4E8E;#left&#x7684;&#x5BBD;&#x5EA6;&#x624D;&#x6709;&#x6548;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x7ED9;#left&#x8BBE;&#x7F6E;margin-right</p>
+<h4 id="2-&#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;">2. &#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{<span class="hljs-attribute">display</span>: flex;}
+<span class="hljs-selector-id">#left</span> { <span class="hljs-comment">/*&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;  <span class="hljs-comment">/*&#x5747;&#x5206;#parent&#x5269;&#x4F59;&#x7684;&#x90E8;&#x5206;*/</span>
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;flex&#x8BBE;&#x7F6E;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#x3001;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x7F62;&#x4E86;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x6587;&#x672B;flex&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7B80;&#x5355;&#x7075;&#x6D3B;&#xFF1B;&#x529F;&#x80FD;&#x5F3A;&#x5927;<br>&#x7F3A;&#x70B9;&#xFF1A;PC&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android4.0+&#xFF09;
+flex&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;autoprefixer</p>
+<h4 id="3-&#x4F7F;&#x7528;floatoverflow">3. &#x4F7F;&#x7528;float+overflow</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">overflow</span>: hidden; <span class="hljs-comment">/*&#x89E6;&#x53D1;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;*/</span>
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;#left&#x5DE6;&#x6D6E;&#x52A8;&#xFF0C;#right&#x89E6;&#x53D1;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;<br>&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#xFF1B;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF1B;&#x65E0;&#x9700;&#x5173;&#x6CE8;&#x5B9A;&#x5BBD;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x5229;&#x7528;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;<br>&#x7F3A;&#x70B9;&#xFF1A;#right&#x8BBE;&#x7F6E;margin-left&#x9700;&#x8981;&#x5927;&#x4E8E;#left&#x7684;&#x5BBD;&#x5EA6;&#x624D;&#x6709;&#x6548;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x7ED9;#left&#x8BBE;&#x7F6E;margin-right</p>
+<h4 id="4-&#x4F7F;&#x7528;position&#x5B9E;&#x73B0;">4. &#x4F7F;&#x7528;position&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{<span class="hljs-attribute">position</span>: relative;}  <span class="hljs-comment">/*&#x7236;&#x76F8;*/</span>
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">position</span>: absolute;  <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">position</span>: absolute;  <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;  <span class="hljs-comment">/*&#x503C;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;#left&#x7684;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;&#x5229;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x7B97;&#x597D;&#x5BBD;&#x9AD8;&#x56FA;&#x5B9A;&#x597D;&#x4E24;&#x4E2A;&#x76D2;&#x5B50;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF1B;&#x517C;&#x5BB9;&#x6027;&#x597D;<br>&#x4EE3;&#x7801;&#x8F83;&#x591A;&#xFF1B;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF1B;&#x5DE6;&#x8FB9;&#x76D2;&#x5B50;&#x7684;width&#x9700;&#x8981;&#x5BF9;&#x5E94;&#x53F3;&#x8FB9;&#x76D2;&#x5B50;&#x7684;left&#x503C;</p>
+<h4 id="5-&#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;">5. &#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: flex;
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>; <span class="hljs-comment">/*&#x5747;&#x5206;&#x4E86;&#x7236;&#x5143;&#x7D20;&#x5269;&#x4F59;&#x7A7A;&#x95F4;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;flex&#x8BBE;&#x7F6E;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#x3001;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x7F62;&#x4E86;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x6587;&#x672B;flex&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7B80;&#x5355;&#x7075;&#x6D3B;&#xFF1B;&#x529F;&#x80FD;&#x5F3A;&#x5927;<br>&#x7F3A;&#x70B9;&#xFF1A;PC&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android4.0+&#xFF09;
+flex&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;autoprefixer</p>
+<h4 id="6-&#x4F7F;&#x7528;grid&#x5B9E;&#x73B0;">6. &#x4F7F;&#x7528;Grid&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">100px</span> auto;  <span class="hljs-comment">/*&#x8BBE;&#x5B9A;2&#x5217;&#x5C31;ok&#x4E86;,auto&#x6362;&#x6210;1fr&#x4E5F;&#x884C;*/</span>
+}
+<span class="hljs-selector-id">#left</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;}
+<span class="hljs-selector-id">#right</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;css grid&#x5E03;&#x5C40;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#x6587;&#x672B;&#x7684;&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7075;&#x6D3B;&#x5212;&#x5206;&#x7F51;&#x683C;&#x533A;&#x57DF;&#xFF1B;&#x65B0;&#x578B;&#x5E03;&#x5C40;&#x5229;&#x5668;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x9875;&#x9762;&#x4E09;&#x7EF4;&#x5E03;&#x5C40;<br>&#x7F3A;&#x70B9;&#xFF1A;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android5.0+&#xFF09;</p>
+<h3 id="&#x4E8C;&#x3001;&#x4E00;&#x5217;&#x4E0D;&#x5B9A;&#x4E00;&#x5217;&#x81EA;&#x9002;&#x5E94;">&#x4E8C;&#x3001;&#x4E00;&#x5217;&#x4E0D;&#x5B9A;,&#x4E00;&#x5217;&#x81EA;&#x9002;&#x5E94;</h3>
+<h4 id="1-&#x4F7F;&#x7528;floatoverflow">1. &#x4F7F;&#x7528;float+overflow</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">float</span>: left;  <span class="hljs-comment">/*&#x53EA;&#x8BBE;&#x7F6E;&#x6D6E;&#x52A8;,&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">overflow</span>: hidden;  <span class="hljs-comment">/*&#x89E6;&#x53D1;bfc*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;#left&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;&#x5DE6;&#x6D6E;&#x52A8;&#xFF0C;#right&#x89E6;&#x53D1;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;<br>&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#xFF0C;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x65E0;&#x9700;&#x5173;&#x6CE8;&#x5BBD;&#x5EA6;&#xFF0C;&#x5229;&#x7528;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;<br>&#x7F3A;&#x70B9;&#xFF1A;#right&#x8BBE;&#x7F6E;margin-left&#x9700;&#x8981;&#x5927;&#x4E8E;#left&#x7684;&#x5BBD;&#x5EA6;&#x624D;&#x6709;&#x6548;&#xFF0C;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x7ED9;#left&#x8BBE;&#x7F6E;margin-right</p>
+<h4 id="2-&#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;">2. &#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{<span class="hljs-attribute">display</span>: flex;}
+<span class="hljs-selector-id">#left</span> { <span class="hljs-comment">/*&#x4E0D;&#x8BBE;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;  <span class="hljs-comment">/*&#x5747;&#x5206;#parent&#x5269;&#x4F59;&#x7684;&#x90E8;&#x5206;*/</span>
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;flex&#x8BBE;&#x7F6E;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#x3001;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x7F62;&#x4E86;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x6587;&#x672B;flex&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7B80;&#x5355;&#x7075;&#x6D3B;&#xFF1B;&#x529F;&#x80FD;&#x5F3A;&#x5927;<br>&#x7F3A;&#x70B9;&#xFF1A;PC&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android4.0+&#xFF09;
+flex&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;autoprefixer</p>
+<h4 id="3-&#x4F7F;&#x7528;grid&#x5B9E;&#x73B0;">3. &#x4F7F;&#x7528;Grid&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-columns</span>: auto <span class="hljs-number">1</span>fr;  <span class="hljs-comment">/*auto&#x548C;1fr&#x6362;&#x4E00;&#x4E0B;&#x987A;&#x5E8F;&#x5C31;&#x662F;&#x5DE6;&#x5217;&#x81EA;&#x9002;&#x5E94;,&#x53F3;&#x5217;&#x4E0D;&#x5B9A;&#x5BBD;&#x4E86;*/</span>
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;css grid&#x5E03;&#x5C40;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#x6587;&#x672B;&#x7684;&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7075;&#x6D3B;&#x5212;&#x5206;&#x7F51;&#x683C;&#x533A;&#x57DF;&#xFF1B;&#x65B0;&#x578B;&#x5E03;&#x5C40;&#x5229;&#x5668;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x9875;&#x9762;&#x4E09;&#x7EF4;&#x5E03;&#x5C40;<br>&#x7F3A;&#x70B9;&#xFF1A;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android5.0+&#xFF09;</p>
+<p>&#x5C0F;&#x7ED3;&#xFF1A;  </p>
+<ul>
+<li>&#x4E24;&#x5217;&#x5E03;&#x5C40;&#x6211;&#x4EEC;&#x7528;&#x5F97;&#x6BD4;&#x8F83;&#x591A;&#x7684;&#x5C31;&#x662F;&#x6D6E;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x6700;&#x7B80;&#x5355;&#x5C31;&#x662F;&#x628A;&#x53E6;&#x5916;&#x90A3;&#x4E2A;&#x4E0D;&#x662F;&#x6D6E;&#x52A8;&#x7684;&#x76D2;&#x5B50;&#x89E6;&#x53D1;bfc&#x4EE5;&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;&#x5C31;O&#x4E86;&#x3002;&#x5176;&#x6B21;&#x5C31;&#x662F;&#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x56FA;&#x5BBD;&#x503C;&#x7684;&#x7684;&#x4E00;&#x4E9B;margin&#x3001;padding&#x53BB;&#x6539;&#x53D8;&#x76D2;&#x5B50;&#x7684;&#x6392;&#x5E03;&#x4EE5;&#x8FBE;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x76EE;&#x7684;&#xFF1B;</li>
+<li>&#x9664;&#x4E86;&#x6D6E;&#x52A8;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#xFF0C;&#x8BA1;&#x7B97;&#x597D;&#x5BBD;&#x9AD8;&#x3001;&#x4F4D;&#x7F6E;&#x53BB;&#x8BBE;&#x7F6E;&#x6837;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B80;&#x5355;&#x4E5F;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x5C31;&#x662F;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#x5E76;&#x4E14;&#x4EE3;&#x7801;&#x7A0D;&#x5FAE;&#x591A;&#x4E86;&#x4E00;&#x70B9;&#xFF1B;</li>
+<li>&#x8FD8;&#x6709;&#x5C31;&#x662F;css table&#x5E03;&#x5C40;&#xFF0C;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x633A;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x4E5F;&#x7B80;&#x5355;&#xFF0C;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x9519;&#xFF08;ie8+&#xFF09;&#xFF0C;&#x4F46;&#x5C31;&#x662F;table&#x8868;&#x73B0;&#x7684;bug&#x592A;&#x591A;&#xFF0C;&#x4E0D;&#x611F;&#x77E5;margin&#x4E4B;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8981;&#x662F;&#x9700;&#x6C42;&#x8DB3;&#x591F;&#xFF0C;&#x5B8C;&#x5168;&#x662F;&#x53EF;&#x4EE5;&#x5148;&#x8003;&#x8651;&#x8FD9;&#x4E2A;&#x7684;&#xFF1B;</li>
+<li>&#x79FB;&#x52A8;&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x5141;&#x8BB8;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x80FD;&#x7528;flex&#x5C31;&#x7528;flex&#xFF0C;&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x53EF;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Autoprefixer&#xFF1B;</li>
+</ul>
+<h2 id="&#x4E09;&#x5217;&#x5E03;&#x5C40;">&#x4E09;&#x5217;&#x5E03;&#x5C40;</h2>
+<h3 id="&#x4E00;&#x3001;-&#x4E24;&#x5217;&#x5B9A;&#x5BBD;&#x4E00;&#x5217;&#x81EA;&#x9002;&#x5E94;">&#x4E00;&#x3001; &#x4E24;&#x5217;&#x5B9A;&#x5BBD;,&#x4E00;&#x5217;&#x81EA;&#x9002;&#x5E94;</h3>
+<h4 id="1-&#x4F7F;&#x7528;floatmargin">1. &#x4F7F;&#x7528;float+margin</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{<span class="hljs-attribute">min-width</span>: <span class="hljs-number">310px</span>;} <span class="hljs-comment">/*100+10+200,&#x9632;&#x6B62;&#x5BBD;&#x5EA6;&#x4E0D;&#x591F;,&#x5B50;&#x5143;&#x7D20;&#x6362;&#x884C;*/</span>
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;  <span class="hljs-comment">/*#left&#x548C;#center&#x95F4;&#x9694;*/</span>
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span>{
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">320px</span>;  <span class="hljs-comment">/*&#x7B49;&#x4E8E;#left&#x548C;#center&#x7684;&#x5BBD;&#x5EA6;&#x4E4B;&#x548C;&#x52A0;&#x4E0A;&#x95F4;&#x9694;,&#x591A;&#x51FA;&#x6765;&#x7684;&#x5C31;&#x662F;#right&#x548C;#center&#x7684;&#x95F4;&#x9694;*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;&#x4E24;&#x4E2A;&#x76D2;&#x5B50;&#x6D6E;&#x52A8;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x76D2;&#x5B50;&#x8BA1;&#x7B97;&#x597D;&#x4E24;&#x4E2A;&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x5EA6;&#x3001;&#x95F4;&#x9694;&#x4E4B;&#x548C;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;margin&#x503C;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#xFF1B;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF1B;&#x517C;&#x5BB9;&#x6027;&#x597D;<br>&#x7F3A;&#x70B9;&#xFF1A;margin&#x6216;padding&#x7684;&#x503C;&#x8981;&#x5BF9;&#x5E94;&#x597D;&#xFF1B;&#x7236;&#x5143;&#x7D20;&#x5BBD;&#x5EA6;&#x4E0D;&#x591F;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x4F1A;&#x6362;&#x884C;</p>
+<h4 id="2-&#x4F7F;&#x7528;floatoverflow">2. &#x4F7F;&#x7528;float+overflow</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span>{<span class="hljs-attribute">min-width</span>: <span class="hljs-number">320px</span>;} <span class="hljs-comment">/*100+10+200+20,&#x9632;&#x6B62;&#x5BBD;&#x5EA6;&#x4E0D;&#x591F;,&#x5B50;&#x5143;&#x7D20;&#x6362;&#x884C;*/</span>
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>; <span class="hljs-comment">/*&#x95F4;&#x9694;*/</span>
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span>{
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>; <span class="hljs-comment">/*&#x5728;&#x6B64;&#x5B9A;&#x4E49;&#x548C;#right&#x7684;&#x95F4;&#x9694;*/</span>
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">overflow</span>: hidden;  <span class="hljs-comment">/*&#x89E6;&#x53D1;bfc*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;&#x4E24;&#x4E2A;&#x76D2;&#x5B50;&#x6D6E;&#x52A8;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x76D2;&#x5B50;&#x89E6;&#x53D1;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;<br>&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x7B80;&#x5355;&#xFF0C;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF0C;&#x65E0;&#x9700;&#x5173;&#x6CE8;&#x5B9A;&#x5BBD;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x5229;&#x7528;bfc&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;<br>&#x7F3A;&#x70B9;&#xFF1A;#right&#x8BBE;&#x7F6E;margin-left&#x9700;&#x8981;&#x5927;&#x4E8E;&#x5DE6;&#x8FB9;&#x4E24;&#x4E2A;&#x76D2;&#x5B50;&#x5BBD;&#x5EA6;&#x3001;&#x95F4;&#x9694;&#x4E4B;&#x548C;&#x624D;&#x6709;&#x6548;&#x3002;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x7ED9;#center&#x8BBE;&#x7F6E;margin-right&#xFF1B;&#x7236;&#x5143;&#x7D20;&#x5BBD;&#x5EA6;&#x4E0D;&#x591F;&#xFF0C;&#x6D6E;&#x52A8;&#x5143;&#x7D20;&#x6362;&#x884C;</p>
+<h4 id="3-&#x4F7F;&#x7528;position&#x5B9E;&#x73B0;">3. &#x4F7F;&#x7528;position&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {<span class="hljs-attribute">position</span>: relative;} <span class="hljs-comment">/*&#x7236;&#x76F8;*/</span>
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;        <span class="hljs-comment">/*&#x5BF9;&#x5E94;#left&#x7684;width&#x503C;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">300px</span>;        <span class="hljs-comment">/*&#x5BF9;&#x5E94;#left&#x548C;#center&#x7684;width&#x503C;&#x4E4B;&#x548C;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;&#x8BA1;&#x7B97;&#x597D;&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x95F4;&#x9694;&#x53BB;&#x8BBE;&#x7F6E;&#x4F4D;&#x7F6E;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;&#xFF1A;<br>&#x4F18;&#x70B9;&#xFF1A;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF1B;&#x517C;&#x5BB9;&#x6027;&#x6BD4;&#x8F83;&#x597D;&#xFF1B;&#x6539;&#x53D8;&#x76F8;&#x5BF9;&#x7075;&#x6D3B;<br>&#x7F3A;&#x70B9;&#xFF1A;&#x9700;&#x624B;&#x52A8;&#x8BA1;&#x7B97;&#x5BBD;&#x5EA6;&#x3001;&#x95F4;&#x9694;&#x4E4B;&#x548C;&#x786E;&#x5B9A;&#x4F4D;&#x7F6E;&#xFF1B;</p>
+<h4 id="4-&#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;">4. &#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: flex;
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;  <span class="hljs-comment">/*&#x95F4;&#x8DDD;*/</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;  <span class="hljs-comment">/*&#x95F4;&#x8DDD;*/</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;  <span class="hljs-comment">/*&#x5747;&#x5206;#parent&#x5269;&#x4F59;&#x7684;&#x90E8;&#x5206;&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;flex&#x8BBE;&#x7F6E;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#x3001;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x7F62;&#x4E86;&#xFF0C;&#x8BF7;&#x67E5;&#x9605;&#x6587;&#x672B;flex&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7B80;&#x5355;&#x7075;&#x6D3B;&#xFF1B;&#x529F;&#x80FD;&#x5F3A;&#x5927;<br>&#x7F3A;&#x70B9;&#xFF1A;PC&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android4.0+&#xFF09;
+flex&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x8BF7;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;autoprefixer</p>
+<h4 id="5-&#x4F7F;&#x7528;grid&#x5B9E;&#x73B0;">5. &#x4F7F;&#x7528;Grid&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">100px</span> <span class="hljs-number">200px</span> auto; <span class="hljs-comment">/*&#x8BBE;&#x7F6E;3&#x5217;,&#x56FA;&#x5B9A;&#x7B2C;&#x4E00;&#x7B2C;&#x4E8C;&#x5217;&#x7684;&#x5BBD;&#x5EA6;,&#x7B2C;&#x4E09;&#x5217;auto&#x6216;&#x8005;1fr*/</span>
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;  <span class="hljs-comment">/*&#x95F4;&#x8DDD;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;  <span class="hljs-comment">/*&#x95F4;&#x8DDD;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;}
+</code></pre>
+<p>&#x539F;&#x7406;&#xFF1A;css grid&#x5E03;&#x5C40;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#x6587;&#x672B;&#x7684;&#x9605;&#x8BFB;&#x63A8;&#x8350;</p>
+<p>&#x4F18;&#x7F3A;&#x70B9;:<br>&#x4F18;&#x70B9;&#xFF1A;&#x7075;&#x6D3B;&#x5212;&#x5206;&#x7F51;&#x683C;&#x533A;&#x57DF;&#xFF1B;&#x65B0;&#x578B;&#x5E03;&#x5C40;&#x5229;&#x5668;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x9875;&#x9762;&#x4E09;&#x7EF4;&#x5E03;&#x5C40;<br>&#x7F3A;&#x70B9;&#xFF1A;&#x517C;&#x5BB9;&#x6027;&#x4E0D;&#x597D;&#xFF0C;&#x79FB;&#x52A8;&#x7AEF;&#xFF08;Android5.0+&#xFF09;</p>
+<h3 id="&#x4E8C;&#x3001;-&#x4E24;&#x4FA7;&#x5B9A;&#x5BBD;&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;">&#x4E8C;&#x3001; &#x4E24;&#x4FA7;&#x5B9A;&#x5BBD;,&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;</h3>
+<h4 id="1&#x53CC;&#x98DE;&#x7FFC;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;">1.&#x53CC;&#x98DE;&#x7FFC;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!--&#x4E2D;&#x95F4;&#x680F;&#x9700;&#x8981;&#x653E;&#x5728;&#x524D;&#x9762;--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center_inbox&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>  <span class="hljs-comment">&lt;!--&#x65B9;&#x4FBF;&#x89C2;&#x5BDF;&#x539F;&#x7406;--&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;footer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#header</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">100%</span>; <span class="hljs-comment">/*&#x8C03;&#x6574;#left&#x7684;&#x4F4D;&#x7F6E;,&#x503C;&#x7B49;&#x4E8E;&#x81EA;&#x8EAB;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#center_inbox</span>{
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">480px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">220px</span> <span class="hljs-number">0</span> <span class="hljs-number">120px</span>;  <span class="hljs-comment">/*&#x5173;&#x952E;!!!&#x5DE6;&#x53F3;&#x8FB9;&#x754C;&#x7B49;&#x4E8E;&#x5DE6;&#x53F3;&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x5EA6;,&#x591A;&#x51FA;&#x6765;&#x7684;&#x4E3A;&#x76D2;&#x5B50;&#x95F4;&#x9694;*/</span>
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">200px</span>;  <span class="hljs-comment">/*&#x4F7F;right&#x5230;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;,&#x503C;&#x7B49;&#x4E8E;&#x81EA;&#x8EAB;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#footer</span> {
+    <span class="hljs-attribute">clear</span>: both;  <span class="hljs-comment">/*&#x6CE8;&#x610F;&#x6E05;&#x9664;&#x6D6E;&#x52A8;!!*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+</code></pre>
+<h4 id="2-&#x5723;&#x676F;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;">2. &#x5723;&#x676F;&#x5E03;&#x5C40;&#x65B9;&#x6CD5;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--#center&#x9700;&#x8981;&#x653E;&#x5728;&#x524D;&#x9762;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;footer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#header</span>{
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+<span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-number">215px</span> <span class="hljs-number">0</span> <span class="hljs-number">115px</span>;  <span class="hljs-comment">/*&#x4E3A;&#x4E86;&#x4F7F;#center&#x6446;&#x6B63;,&#x5DE6;&#x53F3;padding&#x5206;&#x522B;&#x7B49;&#x4E8E;&#x5DE6;&#x53F3;&#x76D2;&#x5B50;&#x7684;&#x5BBD;,&#x53EF;&#x4EE5;&#x7ED3;&#x5408;&#x5DE6;&#x53F3;&#x76D2;&#x5B50;&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x7684;left&#x8C03;&#x6574;&#x95F4;&#x8DDD;*/</span>
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">100%</span>;  <span class="hljs-comment">/*&#x4F7F;#left&#x4E0A;&#x53BB;&#x4E00;&#x884C;*/</span>
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">left</span>: -<span class="hljs-number">115px</span>;  <span class="hljs-comment">/*&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x8C03;&#x6574;#left&#x7684;&#x4F4D;&#x7F6E;,&#x6B63;&#x503C;&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x81EA;&#x8EAB;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;  <span class="hljs-comment">/*&#x7531;&#x4E8E;#parent&#x7684;padding,&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x7684;&#x76EE;&#x7684;*/</span>
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">215px</span>; <span class="hljs-comment">/*&#x76F8;&#x5BF9;&#x5B9A;&#x4F4D;&#x8C03;&#x6574;#right&#x7684;&#x4F4D;&#x7F6E;,&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x81EA;&#x8EAB;&#x5BBD;&#x5EA6;*/</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">200px</span>;  <span class="hljs-comment">/*&#x4F7F;#right&#x4E0A;&#x53BB;&#x4E00;&#x884C;*/</span>
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#footer</span>{
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+</code></pre>
+<h4 id="3&#x4F7F;&#x7528;grid&#x5B9E;&#x73B0;">3.&#x4F7F;&#x7528;Grid&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--#center&#x9700;&#x8981;&#x653E;&#x5728;&#x524D;&#x9762;--&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;
+        <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;footer&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">100px</span> auto <span class="hljs-number">200px</span>; <span class="hljs-comment">/*&#x8BBE;&#x5B9A;3&#x5217;*/</span>
+    <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-number">60px</span> auto <span class="hljs-number">60px</span>; <span class="hljs-comment">/*&#x8BBE;&#x5B9A;3&#x884C;*/</span>
+    <span class="hljs-comment">/*&#x8BBE;&#x7F6E;&#x7F51;&#x683C;&#x533A;&#x57DF;&#x5206;&#x5E03;*/</span>
+    <span class="hljs-attribute">grid-template-areas</span>: 
+        <span class="hljs-string">&quot;header header header&quot;</span> 
+        <span class="hljs-string">&quot;leftside main rightside&quot;</span> 
+        <span class="hljs-string">&quot;footer footer footer&quot;</span>;
+}
+<span class="hljs-selector-id">#header</span> {
+    <span class="hljs-attribute">grid-area</span>: header; <span class="hljs-comment">/*&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;&#x7F51;&#x683C;&#x533A;&#x57DF;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">grid-area</span>: leftside;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">grid-area</span>: main; <span class="hljs-comment">/*&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;&#x7F51;&#x683C;&#x533A;&#x57DF;*/</span>
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">15px</span>; <span class="hljs-comment">/*&#x8BBE;&#x7F6E;&#x95F4;&#x9694;*/</span>
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#000</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">grid-area</span>: rightside; <span class="hljs-comment">/*&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;&#x7F51;&#x683C;&#x533A;&#x57DF;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+}
+<span class="hljs-selector-id">#footer</span> {
+    <span class="hljs-attribute">grid-area</span>: footer; <span class="hljs-comment">/*&#x6307;&#x5B9A;&#x5728;&#x54EA;&#x4E2A;&#x7F51;&#x683C;&#x533A;&#x57DF;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+}
+</code></pre>
+<h4 id="4-&#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;">4. &#x4F7F;&#x7528;flex&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">display</span>: flex;
+}
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;  <span class="hljs-comment">/*&#x5747;&#x5206;#parent&#x5269;&#x4F59;&#x7684;&#x90E8;&#x5206;*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<h4 id="5-&#x4F7F;&#x7528;position&#x5B9E;&#x73B0;">5. &#x4F7F;&#x7528;position&#x5B9E;&#x73B0;</h4>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;parent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>&#x5DE6;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;right&quot;</span>&gt;</span>&#x53F3;&#x5217;&#x5B9A;&#x5BBD;<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-id">#parent</span> {<span class="hljs-attribute">position</span>: relative;} <span class="hljs-comment">/*&#x7236;&#x76F8;*/</span>
+<span class="hljs-selector-id">#left</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f00</span>;
+}
+<span class="hljs-selector-id">#center</span> {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">100px</span>; <span class="hljs-comment">/*&#x5927;&#x4E8E;&#x7B49;&#x4E8E;#left&#x7684;&#x5BBD;&#x5EA6;,&#x6216;&#x8005;&#x7ED9;#parent&#x6DFB;&#x52A0;&#x540C;&#x6837;&#x5927;&#x5C0F;&#x7684;padding-left*/</span>
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">200px</span>;  <span class="hljs-comment">/*&#x5927;&#x4E8E;&#x7B49;&#x4E8E;#right&#x7684;&#x5BBD;&#x5EA6;,&#x6216;&#x8005;&#x7ED9;#parent&#x6DFB;&#x52A0;&#x540C;&#x6837;&#x5927;&#x5C0F;&#x7684;padding-right*/</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#eeff2b</span>;
+}
+<span class="hljs-selector-id">#right</span> {
+    <span class="hljs-attribute">position</span>: absolute; <span class="hljs-comment">/*&#x5B50;&#x7EDD;*/</span>
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#0f0</span>;
+}
+</code></pre>
+<p>&#x5C0F;&#x7ED3;&#xFF1A;</p>
+<ul>
+<li>&#x4E24;&#x5217;&#x5B9A;&#x5BBD;&#xFF0C;&#x4E00;&#x5217;&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;&#xFF0C;&#x4E2A;&#x4EBA;&#x63A8;&#x8350;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4E24;&#x5217;&#x6D6E;&#x52A8;&#xFF0C;&#x4E00;&#x5217;&#x89E6;&#x53D1;bfc&#x53BB;&#x8FBE;&#x5230;&#x81EA;&#x9002;&#x5E94;&#x6548;&#x679C;&#xFF0C;&#x4EE3;&#x7801;&#x8F83;&#x5C11;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5C31;&#x662F;&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x548C;margin&#x7684;&#x8BBE;&#x7F6E;&#x4EE5;&#x53CA;&#x7236;&#x5143;&#x7D20;&#x7A7A;&#x95F4;&#x662F;&#x5426;&#x8DB3;&#x591F;&#xFF1B;</li>
+<li>&#x53EA;&#x8981;&#x662F;&#x4E09;&#x5217;&#x5E03;&#x5C40;&#xFF0C;&#x5176;&#x5B9E;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x53BB;&#x5B9E;&#x73B0;&#xFF0C;&#x7406;&#x89E3;&#x8D77;&#x6765;&#x4E0D;&#x96BE;&#xFF0C;&#x800C;&#x4E14;&#x53D8;&#x5316;&#x7075;&#x6D3B;&#xFF0C;&#x4E0D;&#x592A;&#x597D;&#x7684;&#x5C31;&#x662F;&#x8131;&#x79BB;&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x5BFC;&#x81F4;&#x4E0D;&#x4E00;&#x5B9A;&#x80FD;&#x6491;&#x8D77;&#x7236;&#x5143;&#x7D20;&#x9AD8;&#x5EA6;&#xFF0C;&#x5BF9;&#x4E8E;&#x4E0B;&#x9762;&#x6392;&#x5E03;&#x7684;&#x76D2;&#x5B50;&#x4F1A;&#x6709;&#x5F71;&#x54CD;&#xFF0C;&#x8FD8;&#x6709;&#x9700;&#x8981;&#x624B;&#x52A8;&#x8BA1;&#x7B97;&#x8FB9;&#x8DDD;&#x7684;&#x503C;&#x53BB;&#x6392;&#x5E03;&#x76D2;&#x5B50;&#xFF1B;</li>
+<li>&#x5176;&#x6B21;&#x53EF;&#x4EE5;&#x9009;&#x7528;css table&#x5E03;&#x5C40;&#xFF0C;&#x4EE3;&#x7801;&#x662F;&#x6700;&#x5C11;&#x7684;&#xFF0C;&#x5C31;&#x662F;bug&#x6709;&#x70B9;&#x591A;&#xFF1B;</li>
+<li>&#x4E24;&#x4FA7;&#x5B9A;&#x5BBD;,&#x4E2D;&#x95F4;&#x81EA;&#x9002;&#x5E94;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x5F97;&#x8BF4;&#x8BF4;&#x5723;&#x676F;&#x5E03;&#x5C40;&#x548C;&#x53CC;&#x98DE;&#x7FFC;&#x5E03;&#x5C40;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x662F;&#x6BD4;&#x8F83;&#x96BE;&#x7406;&#x89E3;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x5723;&#x676F;&#x5E03;&#x5C40;&#x6709;&#x7F3A;&#x9677;&#xFF0C;&#x5982;&#x679C;&#x6D4F;&#x89C8;&#x5668;&#x65E0;&#x9650;&#x53D8;&#x7A84;&#xFF0C;&#x5723;&#x676F;&#x5E03;&#x5C40;&#x5C06;&#x4F1A;&#x4E71;&#x5957;&#x3002;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x5E03;&#x5C40;&#x5728;&#x4E0D;&#x7B49;&#x9AD8;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x5BF9;&#x4E0B;&#x9762;&#x76D2;&#x5B50;&#x6392;&#x5E03;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#x3002;&#x90A3;&#x4E48;&#x53CC;&#x98DE;&#x7FFC;&#x5E03;&#x5C40;&#x4F3C;&#x4E4E;&#x662F;&#x6700;&#x597D;&#x7684;&#x9009;&#x62E9;&#x4E86;&#x3002;&#x4E0D;&#x7BA1;&#x600E;&#x6837;&#xFF0C;&#x5723;&#x676F;&#x5E03;&#x5C40;&#x548C;&#x53CC;&#x98DE;&#x7FFC;&#x5E03;&#x5C40;&#x90FD;&#x662F;&#x8981;&#x597D;&#x597D;&#x5B66;&#x4E60;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x5BF9;&#x76D2;&#x6A21;&#x578B;&#x548C;&#x6D6E;&#x52A8;&#x4F1A;&#x6709;&#x66F4;&#x6DF1;&#x7684;&#x7406;&#x89E3;&#xFF1B;</li>
+<li>&#x79FB;&#x52A8;&#x7AEF;&#x517C;&#x5BB9;&#x6027;&#x5141;&#x8BB8;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x80FD;&#x7528;flex&#x5C31;&#x7528;flex&#xFF0C;&#x52A1;&#x5FC5;&#x5E26;&#x4E0A;&#x517C;&#x5BB9;&#xFF0C;&#x5199;&#x6CD5;&#x53EF;&#x53C2;&#x8003;&#x6587;&#x672B;&#x9605;&#x8BFB;&#x63A8;&#x8350;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Autoprefixer&#xFF1B;</li>
+</ul>
+
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
                                 </section>
@@ -443,7 +1129,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常见布局","level":"2.1.1","depth":2,"next":{"title":"Flex布局","level":"2.1.2","depth":2,"path":"Base/Css/Flex布局.md","ref":"Base/Css/Flex布局.md","articles":[]},"previous":{"title":"Css基础","level":"2.1","depth":1,"path":"Base/Css/README.md","ref":"Base/Css/README.md","articles":[{"title":"常见布局","level":"2.1.1","depth":2,"path":"Base/Css/常见布局.md","ref":"Base/Css/常见布局.md","articles":[]},{"title":"Flex布局","level":"2.1.2","depth":2,"path":"Base/Css/Flex布局.md","ref":"Base/Css/Flex布局.md","articles":[]},{"title":"BFC块格式化上下文","level":"2.1.3","depth":2,"path":"Base/Css/BFC块格式化上下文.md","ref":"Base/Css/BFC块格式化上下文.md","articles":[]}]},"dir":"neutral"},"config":{"plugins":["back-to-top-button","chapter-fold","code","splitter","-lunr","-search","search-pro","popup","-sharing","sharing-plus"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/song111/webBook"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Chris Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Book","language":"zh-hans","gitbook":"3.2.3","description":"web 知识汇总"},"file":{"path":"Base/Css/常见布局.md","mtime":"2019-09-17T16:59:50.863Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-18T08:33:30.462Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常见布局","level":"2.1.1","depth":2,"next":{"title":"Flex布局","level":"2.1.2","depth":2,"path":"Base/Css/Flex布局.md","ref":"Base/Css/Flex布局.md","articles":[]},"previous":{"title":"Css基础","level":"2.1","depth":1,"path":"Base/Css/README.md","ref":"Base/Css/README.md","articles":[{"title":"常见布局","level":"2.1.1","depth":2,"path":"Base/Css/常见布局.md","ref":"Base/Css/常见布局.md","articles":[]},{"title":"Flex布局","level":"2.1.2","depth":2,"path":"Base/Css/Flex布局.md","ref":"Base/Css/Flex布局.md","articles":[]},{"title":"BFC块格式化上下文","level":"2.1.3","depth":2,"path":"Base/Css/BFC块格式化上下文.md","ref":"Base/Css/BFC块格式化上下文.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","chapter-fold","code","splitter","-lunr","-search","search-pro","popup","-sharing","sharing-plus"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"github":{"url":"https://github.com/song111/webBook"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"qq":true,"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"],"douban":true,"facebook":true,"weibo":true,"twitter":true,"pocket":true,"google":true,"qzone":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Chris Song","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Web Book","language":"zh-hans","gitbook":"3.2.3","description":"web 知识汇总"},"file":{"path":"Base/Css/常见布局.md","mtime":"2019-11-09T03:09:37.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-09T04:39:23.711Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
