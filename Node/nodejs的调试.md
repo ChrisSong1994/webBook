@@ -37,11 +37,14 @@ Break on start in file:///Users/songjun/%E5%AD%A6%E4%B9%A0/github/dataView/serve
             "type": "node",
             "request": "launch",
             "name": "启动程序",
-            "program": "${workspaceFolder}/app.js"
+            "program": "${workspaceFolder}/app.js",
+             "console": "integratedTerminal"  // 终端调试
         }
     ]
 }
 ```
 启动脚本文件，在vscode 直接打断点调试
+
+假如你想在debug 的时候用终端输入什么例如inquirer 的询问选项，进行调试，那么可以在launch.json 中加入```"console": "integratedTerminal"```, 在调试时会出现终端而不是debug模式。
 
 ![vscode端点调试](images/vscode端点调试.png)
